@@ -11,7 +11,7 @@ namespace GradeBook.GradeBooks
 {
     public class BaseGradeBook
     {
-        public string Type(GradeBookType);
+        public string Type;
         
         public string Name { get; set; }
         public List<Student> Students { get; set; }
@@ -237,7 +237,7 @@ namespace GradeBook.GradeBooks
 
             var jobject = JsonConvert.DeserializeObject<JObject>(json);
             var gradeBookType = jobject.Property("Type")?.Value?.ToString();
-
+            
             // Check if StandardGradeBook exists
             if ((from assembly in AppDomain.CurrentDomain.GetAssemblies()
                  from type in assembly.GetTypes()
