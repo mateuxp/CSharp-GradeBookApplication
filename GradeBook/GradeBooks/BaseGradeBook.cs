@@ -18,9 +18,13 @@ namespace GradeBook.GradeBooks
         {
             Name = name;
             Students = new List<Student>();
-            
-            public string Type { get; set; };
-        }
+
+        public string Type
+        {
+            get;
+            set { typeof(GradeBookType) };
+        };
+    }
         
         public void AddStudent(Student student)
         {
