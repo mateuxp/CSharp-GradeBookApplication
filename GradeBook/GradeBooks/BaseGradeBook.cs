@@ -103,7 +103,9 @@ namespace GradeBook.GradeBooks
                 }
             }
         }
-
+        
+        public string Type(GradeBookType);
+        
         public virtual double GetGPA(char letterGrade, StudentType studentType)
         {
             switch (letterGrade)
@@ -266,8 +268,5 @@ namespace GradeBook.GradeBooks
             
             return JsonConvert.DeserializeObject(json, gradebook);
         }
-        
-        public string Type = System.Type(GradeBookType);
-        
     }
 }
