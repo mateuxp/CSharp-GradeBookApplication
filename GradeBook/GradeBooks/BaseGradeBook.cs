@@ -18,9 +18,10 @@ namespace GradeBook.GradeBooks
         {
             Name = name;
             Students = new List<Student>();
-            Type = typeof(BaseGradeBook);
         }
 
+        public void Type(Type GradeBookType);
+        
         public void AddStudent(Student student)
         {
             if (string.IsNullOrEmpty(student.Name))
