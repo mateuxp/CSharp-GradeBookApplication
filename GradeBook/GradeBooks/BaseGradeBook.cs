@@ -11,7 +11,6 @@ namespace GradeBook.GradeBooks
 {
     public abstract class BaseGradeBook
     {
-        public Type<GradeBookType> Type;
         public string Name { get; set; }
         public List<Student> Students { get; set; }
 
@@ -19,6 +18,7 @@ namespace GradeBook.GradeBooks
         {
             Name = name;
             Students = new List<Student>();
+            Type = new Type<GradeBookType>();
         }
         
         public void AddStudent(Student student)
