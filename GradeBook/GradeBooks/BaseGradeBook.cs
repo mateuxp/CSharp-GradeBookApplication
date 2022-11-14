@@ -11,6 +11,7 @@ namespace GradeBook.GradeBooks
 {
     public class BaseGradeBook
     {
+        public Type(Type GradeBookType);
         public string Name { get; set; }
         public List<Student> Students { get; set; }
 
@@ -103,9 +104,7 @@ namespace GradeBook.GradeBooks
                 }
             }
         }
-        
-        public string Type(GradeBookType);
-        
+
         public virtual double GetGPA(char letterGrade, StudentType studentType)
         {
             switch (letterGrade)
