@@ -17,3 +17,4 @@ namespace GradeBook.GradeBooks
             return base.GetLetterGrade(averageGrade);
         }
     }
+}
