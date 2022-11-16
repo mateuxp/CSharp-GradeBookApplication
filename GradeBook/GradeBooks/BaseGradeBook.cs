@@ -108,24 +108,23 @@ namespace GradeBook.GradeBooks
 
         public virtual double GetGPA(char letterGrade, StudentType studentType)
         {
-            var gpa = 0;
             switch (letterGrade)
             {
                 case 'A':
-                    gpa = 4;
-                    break;
+                    return 4;
                 case 'B':
-                    gpa = 3;
-                    break;
+                    return 3;
                 case 'C':
-                    gpa = 2;
-                    break;
+                    return 2;
                 case 'D':
-                    gpa = 1;
-                    break;
+                    return 1;
                 case 'F':
+<<<<<<< HEAD
                     gpa = 0;
                     break;
+=======
+                    return 0;
+>>>>>>> parent of cf24340 (Update BaseGradeBook.cs)
             }
 
             if (IsWeighted && (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled)) 
