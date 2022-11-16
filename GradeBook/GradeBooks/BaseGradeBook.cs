@@ -119,21 +119,7 @@ namespace GradeBook.GradeBooks
                 case 'D':
                     return 1;
                 case 'F':
-<<<<<<< HEAD
-                    gpa = 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    break;
-=======
                     return 0;
->>>>>>> parent of cf24340 (Update BaseGradeBook.cs)
-=======
->>>>>>> parent of b4df61b (Update BaseGradeBook.cs)
-=======
->>>>>>> parent of b4df61b (Update BaseGradeBook.cs)
-=======
->>>>>>> parent of b4df61b (Update BaseGradeBook.cs)
             }
             return 0;
         }
