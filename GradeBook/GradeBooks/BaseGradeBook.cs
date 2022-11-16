@@ -121,16 +121,15 @@ namespace GradeBook.GradeBooks
                 case 'F':
 <<<<<<< HEAD
                     gpa = 0;
+<<<<<<< HEAD
                     break;
 =======
                     return 0;
 >>>>>>> parent of cf24340 (Update BaseGradeBook.cs)
+=======
+>>>>>>> parent of b4df61b (Update BaseGradeBook.cs)
             }
-
-            if (IsWeighted && (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled)) 
-                gpa++; 
-            return gpa;
-
+            return 0;
         }
 
         public virtual void CalculateStatistics()
